@@ -33,25 +33,24 @@
     --font-weight-nine: 900;
 }
 body  {
-     background-color: var(--background-color-main);
-     color: var(--color-main);
-     font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color-main);
+    color: var(--color-main);
+    font-family: 'Roboto', sans-serif;
       }
 /* HEADER */
 header {
     background-color:var(--background-color-main);
+;
+    
 }
 .logo {
-     font-family: 'Raleway', sans-serif;
-     color: var(--color-main);
+     font-family: 'Raleway', sans-serif;     
      font-size: var(--font-size-logo);
      line-height: 1.19;
      letter-spacing: 0.03em;
      text-decoration: none;
     }
-.logo:hover, .logo:focus {
-     color:red;
-    }
+
 .accent-web {
     color: var(--color-button);
 }
@@ -59,10 +58,10 @@ header {
     color: var(--background-color-main);
 } 
 .site-nav .link:hover, .site-nav .link:focus{
-    color: red;    
+    color: blue;    
 }
 .link {
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-extrasmall);
     line-height: 1.14;
@@ -81,7 +80,7 @@ color: var(--color-button);
     text-decoration: none;
 }
 .header-address:hover, .header-address:focus {
-color: red;
+color: blue;
 }
 /* MAIN */
 .main-slogan {
@@ -95,7 +94,11 @@ color: red;
     line-height: 1.36;
     letter-spacing: var(--letter-spacing-big);
     text-transform: uppercase;
-}   
+}
+.button {
+    cursor: pointer;
+    }
+
 .button.main {
     font-family: inherit;
     background-color: var(--color-button);
@@ -103,20 +106,26 @@ color: red;
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-small);
     line-height: 1.88;
-    letter-spacing: var(--letter-spacing-big);  
+    letter-spacing: var(--letter-spacing-big);
+}
+.button.main:hover {
+    background-color: #118CE8;
 }
 .button.secondary {
     font-family: inherit;
     background-color: var(--background-color-button);
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-small);
     line-height: 1.62;
     letter-spacing: var(--letter-spacing-medium);
 }
+.button.secondary:hover {
+    background-color: var(--color-button);
+}
 /* strong points */
 .title { 
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-extrasmall);
     line-height: 1.14;
@@ -134,7 +143,7 @@ color: red;
 }
 /* our job */
 .section-title {
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-superbig);
     line-height: 1.17;
@@ -142,22 +151,27 @@ color: red;
     text-align: center;
 }
 /* our team */
-.team {
+
+.section-team {
     background-color: var(--background-color-button);
 }
+.team { background-color: var(--background-color-main);
+     background-color: var(--background-color-main);
+}
 .name {
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-small);
     line-height: 1.19; 
     letter-spacing: var(--letter-spacing-medium);
+   
 }
 .position {
     color: var(--color-addition);
     font-weight: var(--font-weight-four);
     font-size: var(--font-size-small);
     line-height: 1.19;
-    letter-spacing: var(--letter-spacing-medium)
+    letter-spacing: var(--letter-spacing-medium);
 }
 /* footer */
 footer {
@@ -172,10 +186,6 @@ footer {
     text-decoration: none;
 }
 
-.logo-footer:hover, .logo-footer:focus, .accent-web:hover, .accent-web:focus, .accent-studio:hover,
-.accent-studio:focus {
-color: red;
-} 
 
 .address {
     color: var(--background-color-main);
@@ -194,12 +204,12 @@ color: red;
     text-decoration: none;
 }
 .address:hover, .address:hover, .address-mail:hover, .address-tel:hover, .address-tel:focus, .address-mail:focus
-{ color: red;
+{ color: blue;
 }
 
 /* portfolio  page*/
 .text-main {
-    color: var(--color-main);
+    
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-medium);
     line-height: 2;
