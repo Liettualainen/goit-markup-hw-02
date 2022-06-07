@@ -184,8 +184,6 @@ footer {
     letter-spacing: var(--letter-spacing-medium);
     text-decoration: none;
 }
-
-
 .address {
     color: var(--background-color-main);
     font-weight:var(--font-weight-four);
@@ -207,12 +205,17 @@ footer {
 }
 
 /* portfolio  page*/
-.text-main {
-    
+.ref {
+    text-decoration: none;
+}
+
+.text-main {    
+    color: var(--color-main);
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-medium);
     line-height: 2;
     letter-spacing:var(--letter-spacing-big);
+    
 }
 .text-subs {
     color: var(--color-addition);
@@ -220,5 +223,6 @@ footer {
     font-size: var(--font-size-small);
     line-height: 1.88;
     letter-spacing: var(--letter-spacing-medium);
+
 }
 
