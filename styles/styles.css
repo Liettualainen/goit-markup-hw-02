@@ -1,6 +1,8 @@
+
 .list {
     list-style: none;
     /* Убираем маркеры */
+    padding: 0%;
 }
 
 .strong-mame {
@@ -18,6 +20,7 @@
     --color-addition: #757575;
     --color-button: #2196F3;
     --color-white-opacity: rgba(255,255,255,0.6);
+    --color-hover: #188CE8;
     --letter-spacing-small: 0,02em;
     --letter-spacing-medium: 0,03em;
     --letter-spacing-big: 0,06em;
@@ -44,7 +47,8 @@ header {
     
 }
 .logo {
-     font-family: 'Raleway', sans-serif;          
+     font-family: 'Raleway', sans-serif;
+     color: #000000;          
      font-size: var(--font-size-logo);
      line-height: 1.19;
      letter-spacing: 0.03em;
@@ -68,7 +72,7 @@ header {
     color: var(--color-button);
 }
 .link:hover, .link:focus{
-    color: blue;    
+    color: var(--color-hover);    
 }
 .header-address {
     color: var(--color-addition);
@@ -79,7 +83,7 @@ header {
     text-decoration: none;
 }
 .header-address:hover, .header-address:focus {
-color: blue;
+color: var(--color-hover);
 }
 /* MAIN */
 .main-slogan {
@@ -96,7 +100,7 @@ color: blue;
 }
 .button {
     cursor: pointer;
-    }
+   }
 
 .button.main {
     font-family: inherit;
@@ -108,20 +112,28 @@ color: blue;
     letter-spacing: var(--letter-spacing-big);
 }
 .button.main:hover {
-    background-color: #118CE8;
+    background-color: var(--color-hover);
 }
-.button.secondary {
+.button.secondary { 
     font-family: inherit;
-    background-color: var(--background-color-button);
-    
+    background-color: var(--background-color-button);    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-small);
     line-height: 1.62;
     letter-spacing: var(--letter-spacing-medium);
 }
-.button.secondary:hover {
+.job-type {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+
+}
+.button.secondary:hover {           
     background-color: var(--color-button);
 }
+
 /* strong points */
 .title { 
     
@@ -201,7 +213,7 @@ footer {
     text-decoration: none;
 }
 .address:hover, .address:hover, .address-mail:hover, .address-tel:hover, .address-tel:focus, .address-mail:focus
-{ color: blue;
+{ color: var(--color-hover);
 }
 
 /* portfolio  page*/
@@ -223,6 +235,11 @@ footer {
     font-size: var(--font-size-small);
     line-height: 1.88;
     letter-spacing: var(--letter-spacing-medium);
-
 }
-
+.job {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    flex-basis: calc((100% - 60px) / 3);
+   }
