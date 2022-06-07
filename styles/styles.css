@@ -57,19 +57,18 @@ header {
 .accent-studio {
     color: var(--background-color-main);
 } 
-.site-nav .link:hover, .site-nav .link:focus{
-    color: blue;    
-}
-.link {
-    
+.link {    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-extrasmall);
     line-height: 1.14;
     letter-spacing: var(--letter-spacing-small);
     text-decoration: none;
 }
-.site-nav .link.current {
-color: var(--color-button);
+.link.current {
+    color: var(--color-button);
+}
+.link:hover, .link:focus{
+    color: blue;    
 }
 .header-address {
     color: var(--color-addition);
