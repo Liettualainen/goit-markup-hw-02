@@ -83,9 +83,9 @@ header {
 .accent-studio {
     color: var(--background-color-main);
 }
-
+/* contact color problem */
 .site-nav {    
-    color: var(--color-main);
+    /* color: var(--color-main); */
     display: flex;
     margin-left: 93px;
 }
