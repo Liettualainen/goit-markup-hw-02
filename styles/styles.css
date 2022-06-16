@@ -16,6 +16,7 @@
     --background-color-main: #FFFFFF;
     --background-color-addition:#2F303A;
     --background-color-button: #F5F4FA;
+    --border-color: #EEEEEE;
     --color-main: #212121;
     --color-addition: #757575;
     --color-button: #2196F3;
@@ -42,7 +43,7 @@ html {
 *,
 *::before
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body  {
@@ -53,8 +54,9 @@ body  {
       }
 /* HEADER */
 .container {
-    margin-left: 215px;
-    margin-right: 215px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .container.main, .nav-main {
@@ -91,9 +93,6 @@ header {
 }
 .site-nav .link {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: var(--color-main);
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-extrasmall);
     line-height: 1.14;
@@ -112,9 +111,6 @@ header {
 }
 .header-address {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
     color: var(--color-addition);
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-extrasmall);
@@ -136,12 +132,12 @@ color: var(--color-hover);
     text-align: center;
     background-color: var(--background-color-addition);
 }  
+.slogan-button {
+    width: 696px;
+    margin: 0 auto;
+}
 .slogan {
-    margin-top: 0px; 
-    margin-right: 452px;
-    margin-bottom: 30px;
-    margin-left: 452px;    
-
+    margin: 0;
     color: var(--background-color-main);
     font-weight: var(--font-weight-nine);
     font-size: 44px;
@@ -152,10 +148,10 @@ color: var(--color-hover);
 .button {
     cursor: pointer;
     border: 0px solid transparent;
-   }
-
- .button.main {
+}
+.button.main {
     display: inline-block;
+    margin-top: 30px;
     border-radius: 4px;
     padding: 10px 30px;
     min-width: 200px;
@@ -175,19 +171,16 @@ color: var(--color-hover);
 
 /* strong points */
 .strong-points {
-    margin-top: 80px;
-    margin-bottom: 94px;     
+    padding: 94px 0;     
 }
-
 .points-list {   
     display: flex;
 }
-
 .points-list .items + .items {
     margin-left: 30px;
 }
-.title { 
-    
+.title {
+    margin-top: 0;    
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-extrasmall);
     line-height: 1.14;
@@ -196,17 +189,17 @@ color: var(--color-hover);
 
 }
 .title-text {
+    margin: 0;
     color: var(--color-addition);
     font-weight: var(--font-weight-four);
     font-size: var(--font-size-extrasmall);
     line-height: 1.71;
-    letter-spacing: var(--letter-spacing-medium);
-  
+    letter-spacing: var(--letter-spacing-medium); 
 }
 
 /* our job */
 .photo-section {
-    margin-bottom: 94px;        
+    padding-bottom: 94px;        
 }
 .section-title { 
     margin-top: 0%;
@@ -220,8 +213,8 @@ color: var(--color-hover);
 .photo {
     display: flex;
     gap: 30px;
-
 }
+
 /* our team */
 .section-team {
     padding-top: 94px;
@@ -229,17 +222,25 @@ color: var(--color-hover);
     background-color: var(--background-color-button);
 }
 .team-title {
-    margin-top: 50px;
     display: flex;
     gap: 30px;
     flex-basis: calc((100% - 90px) / 4);
     text-align: center;
 }
 .team {
-        background-color: var(--background-color-main);
+    box-sizing: border-box;
+    background-color: var(--background-color-main);
 }
-.name {
-    margin-top: 30px;    
+.team-photo {
+        display: block;
+        max-width: 100%;
+}
+.team-description {
+      padding: 30px 0;
+
+}
+.name {  
+    margin: 0em;    
     font-weight: var(--font-weight-five);
     font-size: var(--font-size-small);
     line-height: 1.19; 
@@ -247,7 +248,7 @@ color: var(--color-hover);
 }
 .position {
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     color: var(--color-addition);
     font-weight: var(--font-weight-four);
     font-size: var(--font-size-small);
@@ -257,10 +258,11 @@ color: var(--color-hover);
 
 /* footer */
 footer {
-   height: 252px;
    background-color:var(--background-color-addition);
 }
-
+.foot {
+padding: 60px 0;
+}
 .logo-footer {
    display: inline-block;
     margin-bottom: 20px;   
@@ -271,10 +273,7 @@ footer {
     letter-spacing: var(--letter-spacing-medium);
     text-decoration: none;
 }
-.container.foot {
-padding-top: 60px;
-padding-bottom: 60px;
-}
+
 .list-address:nth-child(-n+3){
  margin-bottom: 9px;
 }
@@ -303,8 +302,7 @@ padding-bottom: 60px;
 
 /* portfolio  page*/
 .portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding: 94px 0;
 }
 .button.secondary {
     padding: 6px 22px;
@@ -316,7 +314,8 @@ padding-bottom: 60px;
     line-height: 1.62;
     letter-spacing: var(--letter-spacing-medium);
 }
-.button.secondary:hover {           
+.button.secondary:hover {
+    color: var(--background-color-main);           
     background-color: var(--color-button);
 }
 
@@ -332,26 +331,40 @@ padding-bottom: 60px;
 .job {
     display: flex;
     flex-wrap: wrap;
+  
    }
-.job .items {
-    width: calc((100% - 60px)/3);
+.job .items {    
+    width: calc((100% - 90px)/3);
     height: 404px;
     margin-right: 30px;
     margin-bottom: 30px;
+    /* font-size: 0; */
+
 }
 .job .items:nth-child(3n) {
     margin-right: 0;
 }
-
 .job .items:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
 
-.ref {
-    text-decoration: none;
+.image-job {
+    display: block;
+    max-width: 100%;
+    /* outline: 1px solid red;     */
+}
+.text-photo {
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+       
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color); 
 }
 .text-main {
-    margin-left: 24px;    
+    margin: 0;
     color: var(--color-main);
     font-weight: var(--font-weight-seven);
     font-size: var(--font-size-medium);
@@ -359,7 +372,8 @@ padding-bottom: 60px;
     letter-spacing:var(--letter-spacing-big);   
 }
 .text-subs {
-    margin-left: 24px;
+    margin-top: 4px;
+    margin-bottom: 0px;
     color: var(--color-addition);
     font-weight: var(--font-weight-four);
     font-size: var(--font-size-small);
@@ -367,3 +381,5 @@ padding-bottom: 60px;
     letter-spacing: var(--letter-spacing-medium);
 }
 
+
+  
