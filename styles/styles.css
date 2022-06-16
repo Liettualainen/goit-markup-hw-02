@@ -84,7 +84,8 @@ header {
     color: var(--background-color-main);
 }
 
-.site-nav {
+.site-nav {    
+    color: var(--color-main);
     display: flex;
     margin-left: 93px;
 }
