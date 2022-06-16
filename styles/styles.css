@@ -318,7 +318,9 @@ padding: 60px 0;
     color: var(--background-color-main);           
     background-color: var(--color-button);
 }
-
+.ref {
+    text-decoration: none;
+}
 .job-type {
      display: flex;
      margin-bottom: 34px;
