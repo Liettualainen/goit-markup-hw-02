@@ -83,11 +83,11 @@ header {
 .accent-studio {
     color: var(--background-color-main);
 }
+
 .site-nav {
     display: flex;
     margin-left: 93px;
 }
-
 .site-nav .items + .items {
     margin-left: 50px;
 }
