@@ -123,31 +123,6 @@ header {
     display: flex;
     display: block;
 }
-.button.tel, button.mail {
-    margin: 0;
-    padding:0;
-    background-color: var(--background-color-main);
-}
-.mail-button {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    vertical-align: middle;
-    fill: var(--color-addition);
-}
-.mail-button:hover,.tel-button:hover,
-.mail-button:focus, .tel-button:focus    {
-fill: var(--color-hover);
-}
-.tel-button {
-    display: inline-block;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    vertical-align: middle;
-    fill: var(--color-addition);
-}
 .header-address {
     display: inline-block;
     color: var(--color-addition);
@@ -157,8 +132,15 @@ fill: var(--color-hover);
     letter-spacing: var(--letter-spacing-small);
     text-decoration: none;
 }
-.header-address:hover, .header-address:focus {
+.add-icon-button {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align:middle ;
+    fill: var(--color-addition);
+}
+.header-address:hover , .header-address:hover .add-icon-button{
 color: var(--color-hover);
+fill: var(--color-hover);
 }
 /* MAIN */
 .main-slogan {
@@ -206,20 +188,12 @@ color: var(--color-hover);
     background-color: var(--color-hover);
 }
 .overlay {
-    box-sizing: border-box;
-    height: 600px;
-    max-width: 1600px;
-    /* margin-left: auto;
-    margin-right: auto; */
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(..//images/slogan/Img\ \(1\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background: rgba(47, 48, 58, 0.4); */
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
-    
+
 }
 /* strong points */
 .strong-points {
@@ -246,11 +220,12 @@ color: var(--color-hover);
     height:120px;
     width: 270px;
     border: none;
-    border-radius: 4px;
+    border-radius: 4px;    
     fill: var(--color-icon-black);
     background-color: var(--background-color-button);
 }
 .point-icon-button {
+    margin: 25px 100px;    
     width: 70px;
     height: 70px;
 }
@@ -339,9 +314,9 @@ color: var(--color-hover);
     margin: 0;
     padding: 0;
 }
-.team-button-icon {    
-    padding: 0;
-    margin: 0;
+.team-button-icon {  
+    display: block;
+    padding: 12px;
     border: none;
     height: 44px;
     width: 44px;
@@ -352,14 +327,12 @@ color: var(--color-hover);
 .button-color:not(:last-child) .team-button-icon {
     margin-right: 10px;
 }
-.team-icon-button {
+.team-icon-button {    
     width: 20px;
     height: 20px;
 }
-.team-icon-button:hover, .team-icon-button:focus {
-    fill: var(--background-color-main);
-}
-.team-button-icon:hover, .team-button-icon:focus {
+.team-button-icon:hover, .team-icon-button:hover {
+fill: var(--background-color-main);
 background-color: var(--color-hover);
 }
 
@@ -380,7 +353,8 @@ background-color: var(--color-hover);
     padding: 0;
 }
 .customer-button-icon {
-    padding: 0;
+    display: block;
+    padding: 16px 32px;
     margin: 0;
     height: 92px;
     width: 170px;
@@ -397,7 +371,8 @@ background-color: var(--color-hover);
     width: 106px;
     height: 60px;
 }
-.customer-icon-button:hover, .customer-icon-button:focus {
+.customer-button-icon:hover, .customer-icon-button:hover,
+.customer-icon-button:focus {
     fill: var(--color-button);
 }
 
@@ -448,14 +423,30 @@ padding: 60px 0;
     display: flex;
 }
 
-.foot-icons{
+.foot-icons-block {
     display: flex;
     display: block;
-    padding-top: 12px;
-    padding-left: 70px;
-    margin: 0;
+    margin-left: 70px;
     /* outline: 1px solid white; */
     list-style: none;    
+}
+.foot-slogan {
+    display: block;
+    padding: 0;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: var(--background-color-main);
+    font-weight: var(--font-weight-seven);
+    font-size: var(--font-size-extrasmall);
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-medium);
+}
+.foot-icons {
+    display: flex;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .button-color {
     margin: 0;
@@ -463,33 +454,25 @@ padding: 60px 0;
     display: inline-block;
 }
 .button-icon {
-padding: 0;
-border: none;
-height: 44px;
-width: 44px;
-border-radius: 50%;
-background-color: var(--color-icon-background) ;    
+    display: block;
+    padding: 12px;
+    border: none;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: var(--color-icon-background) ;    
 }
-.button-color:nth-child(3) .button-icon {
-background-color: var(--color-button);
-}
-.button-color:not(:last-child) .button-icon {
-    margin-right: 10px;
-}
-
 .icon-button {
     width: 20px;
     height: 20px;
     fill: var(--background-color-main);
 }
-.foot-slogan {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--background-color-main);
-    font-weight: var(--font-weight-seven);
-    font-size: var(--font-size-extrasmall);
-    line-height: 1.14;
-    letter-spacing: var(--letter-spacing-medium);
+.button-color:not(:last-child) .button-icon {
+    margin-right: 10px;
+}
+
+.button-icon:hover {
+    background-color: #188CE8;
 }
 
 
@@ -580,37 +563,3 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
     line-height: 1.88;
     letter-spacing: var(--letter-spacing-medium);
 }
-
-
-    /* .mail::before {
-    display: inline-block;
-    vertical-align: middle;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    content: ""; 
-    background-image: url('../images/header/envelope.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-    .tel::before {
-    display: inline-block;
-    vertical-align: middle;
-    vertical-align: middle;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    content: "";
-    background-image: url('../images/header/smartphone.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-}
-/* .icon-button:hover {
-    fill: #188CE8;
-} */
-/* .button-icon:hover {
-background-color: red;
-} */
