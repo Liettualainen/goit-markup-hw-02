@@ -209,23 +209,20 @@ fill: var(--color-hover);
     margin-left: 30px;
 }
 .point-button-color {
-    display: block;
     margin: 0;
     padding: 0;
 }
 .point-button-icon {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     height:120px;
     width: 270px;
-    border: none;
-    border-radius: 4px;    
-    fill: var(--color-icon-black);
+    border-radius: 4px;
     background-color: var(--background-color-button);
 }
-.point-icon-button {
-    margin: 25px 100px;    
+.point-icon-button { 
     width: 70px;
     height: 70px;
 }
@@ -315,8 +312,9 @@ fill: var(--color-hover);
     padding: 0;
 }
 .team-button-icon {  
-    display: block;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     height: 44px;
     width: 44px;
@@ -343,7 +341,7 @@ background-color: var(--color-hover);
     padding: 94px 0;
 }
 .customer-icons {
-    display: flex;
+    display: flex;   
     margin: 0;
     padding: 0;
     list-style: none;
@@ -353,9 +351,9 @@ background-color: var(--color-hover);
     padding: 0;
 }
 .customer-button-icon {
-    display: block;
-    padding: 16px 32px;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 92px;
     width: 170px;
     border: 1px solid var(--color-icon-black);
@@ -384,7 +382,7 @@ footer {
 padding: 60px 0;
 }
 .logo-footer {
-   display: inline-block;
+    display: inline-block;
     margin-bottom: 20px;   
     font-family: 'Raleway', sans-serif;
     color: var(--color-button) ;
@@ -423,11 +421,8 @@ padding: 60px 0;
     display: flex;
 }
 
-.foot-icons-block {
-    display: flex;
-    display: block;
+.foot-icons-block {   
     margin-left: 70px;
-    /* outline: 1px solid white; */
     list-style: none;    
 }
 .foot-slogan {
@@ -442,8 +437,6 @@ padding: 60px 0;
     letter-spacing: var(--letter-spacing-medium);
 }
 .foot-icons {
-    display: flex;
-    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -454,9 +447,9 @@ padding: 60px 0;
     display: inline-block;
 }
 .button-icon {
-    display: block;
-    padding: 12px;
-    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 44px;
     border-radius: 50%;
