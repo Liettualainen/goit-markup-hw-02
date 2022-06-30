@@ -55,10 +55,22 @@
       <section class="main-slogan overlay">
         <div class="slogan-button">
           <h1 class="slogan">ефективні рішення для вашого бізнесу</h1>
-          <button  type="button" class="button main">Замовити послугу</button>
-        </div>
-      </section>
+          <button data-modal-open type="button" class="button main">
+            Замовити послугу</button>
 
+            <div class="backdrop is-hidden" data-modal>
+              <div class="modal">          
+                <button data-modal-close class="backdrop-modal-icon">
+                  <svg viewBox=" 0 0 18 18" xmlns="http://www.w3.org/2000/svg" 
+                  class="backdrop-icon-modal">
+                  <path d="M15 4.108 13.892 3 9.5 7.392 5.108 
+                    3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608
+                    13.892 14 15 12.892 10.608 8.5 15 4.108Z" /></svg>
+                </button>
+              </div>
+            </div>
+        </div>
+      </section>  
    
       <section class="strong-points">
         <h2 class="strong-mame">Сильні сторони</h2>
@@ -125,14 +137,23 @@
         <div class="container">
         <h2 class="section-title">Чим ми займаємось</h2>
         <ul class="photo list">
-          <li>
+          <li>            
             <img src="images/doing/box_1.jpg" alt="planshet" width="370" />
+              <div class="photo-cover">
+                <div class="photo-cover-text"><span class="cover-photo-text">десктопні застосунки</span></div>
+              </div>
           </li>
           <li>
             <img src="images/doing/box_2.jpg" alt="planshet" width="370" />
+            <div class="photo-cover">
+              <div class="photo-cover-text"><span class="cover-photo-text">мобільні застосунки</span></div>
+            </div>
           </li>
           <li>
             <img src="images/doing/box_3.jpg" alt="planshet" width="370" />
+            <div class="photo-cover">
+                <div class="photo-cover-text"><span class="cover-photo-text">дизайнерські рішення</span></div>
+            </div>
           </li>
         </ul>
       </div>
@@ -396,7 +417,7 @@
         <li class="list-address"><a href="mailto:info@devstudio.com" class="address-mail">info@example.com</a></li>
         <li class="list-address"><a href="tel:+380961111111" class="address-tel">+38 099 111 11 11</a></li>
       </ul>
-      
+
       <div class="foot-icons-block">
         <span class="foot-slogan">ПРИЄДНУЙТЕСЬ</span>
       <ul class="foot-icons">
@@ -438,5 +459,8 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="./js/modal.js"></script>
   </body>
 </html>
