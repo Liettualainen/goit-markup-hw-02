@@ -24,6 +24,7 @@
     --color-hover: #188CE8;
     --color-icon: #E5E5E5;
     --color-icon-black: #AFB1B8;
+    --color-header: #212121;
     --color-icon-background: rgba(255, 255, 255, 0.1);
     --color-cover-background: rgba(47, 48, 58, 0.8);
     --letter-spacing-small: 0.02em;
@@ -105,10 +106,12 @@ header {
     line-height: 1.14;
     letter-spacing: var(--letter-spacing-small);
     text-decoration: none;
+    color:var(--color-header);
 }
 .link {
     position: relative;
-    padding: 10px 0px;  
+    padding: 10px 0px;
+    transition: color var(--twohundred-dur) var(--timing-function);
 }
 .link.current::after {
     position: absolute;
@@ -151,6 +154,7 @@ header {
     line-height: 1.14;
     letter-spacing: var(--letter-spacing-small);
     text-decoration: none;
+    transition: color var(--twohundred-dur) var(--timing-function);
 }
 .add-icon-button {
     display: inline-block;
@@ -160,6 +164,7 @@ header {
     margin-bottom: 4px;
     vertical-align:middle ;
     fill: var(--color-addition);
+    transition: fill var(--twohundred-dur) var(--timing-function);
 }
 
 .header-address:hover, .header-address:hover .add-icon-button,
@@ -212,6 +217,9 @@ header {
     font-size: var(--font-size-small);
     line-height: 1.88;
     letter-spacing: var(--letter-spacing-big);
+
+    transition: background-color var(--twohundred-dur) var(--timing-function);
+    
 }
 .button.main:hover {
     background-color: var(--color-hover);
@@ -228,12 +236,13 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 1600px;
-    height: 1030px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-
+  
     opacity: 1;
     transition: opacity var(--twohundred-dur) var(--timing-function);
+    z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -250,9 +259,11 @@ header {
     width: 528px;
     height: 581px;
     background-color: var(--background-color-main);
+  
 }
 
 .backdrop-modal-icon {
+    cursor: pointer;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -267,10 +278,9 @@ header {
 }
 
 .backdrop-icon-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 18px;
     width: 18px;
@@ -355,6 +365,7 @@ header {
     width: 100%;
     height: 70px; 
     background-color: var(--color-cover-background);
+    
 }
 .photo-cover-text {
     position: absolute;
@@ -433,6 +444,9 @@ header {
     border-radius: 50%;
     fill: var(--color-icon-black);
     background-color: var(--color-icon-background);
+
+    transition: fill var(--twohundred-dur) var(--timing-function), 
+    background-color var(--twohundred-dur) var(--timing-function);
 }
 .button-color:not(:last-child) .team-button-icon {
     margin-right: 10px;
@@ -472,6 +486,8 @@ background-color: var(--color-hover);
     border-radius: 4px;
     fill: var(--color-icon-black);
     background-color: var(--color-icon-background);
+    transition: fill var(--twohundred-dur) var(--timing-function);
+    
 }
 
 .customer-button-color:not(:last-child) .customer-button-icon {
@@ -514,6 +530,7 @@ padding: 60px 0;
     line-height: 1.71;
     letter-spacing: var(--letter-spacing-medium);
     text-decoration: none;
+    transition: color var(--twohundred-dur) var(--timing-function);
 }
 .address-mail, .address-tel
 {
@@ -523,6 +540,8 @@ padding: 60px 0;
     line-height: 1.71;
     letter-spacing: var(--letter-spacing-medium);
     text-decoration: none;
+
+    transition: color var(--twohundred-dur) var(--timing-function);
 }
 .address:hover, .address:hover, .address-mail:hover, .address-tel:hover,
 .address-tel:focus, .address-tel:focus
@@ -565,7 +584,8 @@ padding: 60px 0;
     height: 44px;
     width: 44px;
     border-radius: 50%;
-    background-color: var(--color-icon-background) ;    
+    background-color: var(--color-icon-background);
+    transition: background-color var(--twohundred-dur) var(--timing-function);
 }
 .icon-button {
     width: 20px;
@@ -594,11 +614,16 @@ padding: 60px 0;
     font-size: var(--font-size-small);
     line-height: 1.62;
     letter-spacing: var(--letter-spacing-medium);
+
+    transition: background-color var(--twohundred-dur) var(--timing-function),
+    color var(--twohundred-dur) var(--timing-function), box-shadow var(--twohundred-dur) var(--timing-function);
+   
 }
-.button.secondary:hover, .button.secondary:focus{
-    color: var(--background-color-main);           
-    background-color: var(--color-button);
+.button.secondary:hover, .button.secondary:focus{    
+    background-color:var(--color-button);    
+    color:var(--background-color-main);   
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 /* JOB PICTURES */
 .ref {
@@ -706,4 +731,3 @@ padding: 60px 0;
     color: var(--background-color-main);
     
 }
-
