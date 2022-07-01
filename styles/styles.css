@@ -263,6 +263,9 @@ header {
 }
 
 .backdrop-modal-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     position: absolute;
     top: 8px;
@@ -278,10 +281,6 @@ header {
 }
 
 .backdrop-icon-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     height: 18px;
     width: 18px;
 }
@@ -723,6 +722,7 @@ padding: 60px 0;
 }
 .image-job-text {
     display: block;
+    margin: 0;
     padding: 63px 24px;
     font-weight: var(--font-weight-four);
     font-size: var(--font-size-medium);
